@@ -1,17 +1,24 @@
 import React, { Component } from "react";
 // import { nanoid } from 'nanoid'
 import { Formik, Form } from 'formik';
-import { LoginForm } from "./LoginForm";
+import { LoginForm } from "./RegisrForm/LoginForm";
+
+
+
 
 
 
 
 export class App extends Component {
-
+  state = {
+    contacts: [],
+    name: ''
+  }
 
   render() {
     return (
       <div>
+        <h2>Phonebook</h2>
         <LoginForm/>
       </div>
     )
@@ -19,15 +26,3 @@ export class App extends Component {
 }
 
 
-
-
-
-
-
-// export const App = () => {
-//   return (
-//     <div>
-//       React homework template
-//     </div>
-//   );
-// };
